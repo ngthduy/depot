@@ -33,7 +33,7 @@ body, body>p, body>ol, body>ul, body>td {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 100px;
 }
 
 #notice {
