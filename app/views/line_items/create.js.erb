@@ -1,4 +1,9 @@
-<%# escape_javascript => j%>
+<%# escape_javascript => j %>
 var content = "<%= j (render(@cart)) %>";
 document.getElementById("cart").innerHTML = content;
-<%# $('#cart').html(content) %>
+<%# $('#cart').html(content); %>
+
+document.getElementById("current_item").style.backgroundColor = "#88ff88";
+document.getElementById("current_item").style.color = "black";
+
+<%# $('#current_item').css({'background-color':'#88ff88'}).animate({'background-color':'#114411'}, 1000); %>

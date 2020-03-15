@@ -32,7 +32,8 @@ class LineItemsController < ApplicationController
     respond_to do |format|
       if @line_item.save
         format.html { redirect_to store_index_url }
-        format.js
+        # truyền biến @current_item
+        format.js   { @current_item = @line_item }
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
