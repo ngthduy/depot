@@ -1,0 +1,4 @@
+<%# escape_javascript => j%>
+var content = "<%= j (render(@cart)) %>";
+document.getElementById("cart").innerHTML = content;
+<%# $('#cart').html(content) %>

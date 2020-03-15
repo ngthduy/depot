@@ -76,7 +76,8 @@ body, body>p, body>ol, body>ul, body>td {
 #side ul li a {
   color: #bfb;
   font-size: 18px;
-  padding-bottom: 5px;;
+  padding-bottom: 5px;
+  ;
 }
 
 @media all and (max-width: 800px) {
@@ -92,4 +93,15 @@ body, body>p, body>ol, body>ul, body>td {
   #banner .title {
     display: none;
   }
+}
+
+#slide #cart {
+  font-size: smaller;
+  color: white;
+}
+
+#slide #cart table {
+  border-top: 1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
 }
