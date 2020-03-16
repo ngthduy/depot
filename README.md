@@ -11,9 +11,9 @@ Things you may want to cover:
 
 * Configuration
 
-* Database creation
+* Database name: depot
 
-* Database initialization
+* Database initialization: postgresql
 
 * How to run the test suite
 
