@@ -1,4 +1,5 @@
 class Order < ApplicationRecord
+  # enum => kieu du lieu liet ke => (db: integer, truy xuat: text)
   enum pay_type: {
     "Check" => 0,
     "Credit card" => 1,
