@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 2020_03_18_012811) do
   end
 
   create_table "line_items", force: :cascade do |t|
-    t.bigint "product_id", null: false
-    t.bigint "cart_id", null: false
+    t.bigint "product_id"
+    t.bigint "cart_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "quantity", default: 1
