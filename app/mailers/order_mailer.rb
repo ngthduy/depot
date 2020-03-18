@@ -6,7 +6,7 @@ class OrderMailer < ApplicationMailer
   #   en.order_mailer.received.subject
   #
   def received(order)
-    binding.pry
+    # binding.pry
     @order = order
     mail to: order.email, subject: 'Pragmatic Store Order Confirmation'
   end
