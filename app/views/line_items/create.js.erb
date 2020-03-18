@@ -1,8 +1,8 @@
 if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
 
-<%# escape_javascript => j %>
+<% # escape_javascript => j %>
 var content = "<%= j (render(@cart)) %>";
-<%# document.getElementById("cart").innerHTML = content; %>
+<% # document.getElementById("cart").innerHTML = content; %>
 $('#cart').html(content);
 
 
