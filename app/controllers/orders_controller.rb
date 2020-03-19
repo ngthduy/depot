@@ -29,14 +29,12 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     @order.add_line_items_from_cart(@cart)
-    # binding.pry
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         # sent mail
-        # binding.pry
-        OrderMailer.received(@order).deliver_now
+        # OrderMailer.received(@order).deliver_now
         OrderMailer.received(@order).deliver_later
         format.html { redirect_to store_index_url, notice: "Thank you for your order." }
         format.json { render :show, status: :created, location: @order }

@@ -63,21 +63,6 @@ Rails.application.configure do
   #socket
   config.action_cable.disable_request_forgery_protection = true
   # config smtp email
-  # Depot::Application.configure do
-  #   config.action_mailer.delivery_method = :smtp
-  #   config.action_mailer.smtp_settings = {
-  #     address: "smtp.gmail.com",
-  #     port: 587,
-  #     domain: "in-v3.mailjet.com",
-  #     authentication: "plain",
-  #     user_name: "4630de3df5abfa69c468ded1251a2705",
-  #     password: "2f8dbaae0d103e4179dbadb9d6f6a4f2",
-  #     enable_starttls_auto: true,
-  #   }
-  # end
-  # host = 'localhost:3000'
-  # config.action_mailer.default_url_options = { :host => host, protocol: 'http' }
-  # config.action_mailer.default_url_options = {:host => "hostinger.com"}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.hostinger.com",

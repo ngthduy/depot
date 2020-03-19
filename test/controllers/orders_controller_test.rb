@@ -6,7 +6,7 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get orders_url
+    get store_index_path
     assert_response :success
   end
 
