@@ -1,5 +1,28 @@
-<h1>Order#received</h1>
+<h1>Order</h1>
 
-<p>
-  <%= @greeting %>, find me in app/views/order_mailer/received.html.erb
-</p>
+Dear <h3><b><%= @order.name %></b></h3>
+
+<p>Thank you for your recent order from ngthduy Store. You ordered the following items:</p>
+<table style="border: 1px solid black; algin: center">
+  <tr style="border: 1px solid black">
+    <th>Tên Sách</th>
+    <th>Giá</th>
+    <th>Tiền</th>  
+  </tr>
+  <% @order.line_items.each do |line_item| -%>
+    <tr>
+      <td> <%= line_item.product.title%> </td>
+      <td> <%= line_item.quantity%> &times;</td>
+      <td class="item_price"><%= number_to_currency(line_item.total_price) %></td>
+    </tr>
+  <% end%>
+  <tr>
+    <td colspan="2"><b>Tổng Tiền</b></td>
+    <td>
+      <b><%= number_to_currency(@order.line_items.to_a.sum { |line_item| line_item.total_price }) %></tr></b>
+    </td>
+
+</table>
+
+<br>
+<p>ngthduy</p>

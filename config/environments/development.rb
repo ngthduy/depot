@@ -77,14 +77,15 @@ Rails.application.configure do
   # end
   # host = 'localhost:3000'
   # config.action_mailer.default_url_options = { :host => host, protocol: 'http' }
+  # config.action_mailer.default_url_options = {:host => "hostinger.com"}
   config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = {
-      address: "smtp.hostinger.com",
-      port: 587,
-      # domain: "in-v3.mailjet.com",
-      authentication: "plain",
-      user_name: "ngthduy@ngthduy.com",
-      password: "thanhduy98",
-      enable_starttls_auto: true,
-    }
+  config.action_mailer.smtp_settings = {
+    address: "smtp.hostinger.com",
+    port: 587,
+    domain: "hostinger.com",
+    authentication: "plain",
+    user_name: "ngthduy@ngthduy.com",
+    password: "thanhduy98",
+    enable_starttls_auto: true,
+  }
 end
