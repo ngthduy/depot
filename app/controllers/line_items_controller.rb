@@ -33,7 +33,8 @@ class LineItemsController < ApplicationController
       if @line_item.save
         format.html { redirect_to store_index_url }
         # truyền biến @current_item
-        format.js   { @current_item = @line_item }
+        # binding.pry
+        format.js { @current_item = @line_item  }
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
@@ -60,11 +61,10 @@ class LineItemsController < ApplicationController
   # DELETE /line_items/1.json
   def destroy
     # binding.pry
-    if params['delete_one']  == 'true'
+    if params["delete_one"] == "true"
       if @line_item.quantity > 1
         @line_item.quantity -= 1
         @line_item.save
-        #format.html {redirect_to store_index_url}
       elsif @line_item.quantity == 1
         @line_item.destroy
       end
@@ -72,7 +72,9 @@ class LineItemsController < ApplicationController
       @line_item.destroy
     end
     respond_to do |format|
-      format.html { redirect_to store_index_url, notice: "Line item was successfully destroyed." }
+      format.html { redirect_to store_index_url }
+      # binding.pry
+      format.js
       format.json { head :no_content }
     end
   end

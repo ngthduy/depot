@@ -1,12 +1,10 @@
-<h1>Order</h1>
-
-<h3>Dear <h5><b><%= @order.name %></b></h5></h3>
+<h5>Dear <b><%= @order.name %></b></h5>
 
 <p>Thank you for your recent order from ngthduy Store. You ordered the following items:</p>
 <table style="border: 1px solid black; algin: center">
   <tr style="border: 1px solid black">
     <th>Tên Sách</th>
-    <th>Giá</th>
+    <th>Số Lượng</th>
     <th>Tiền</th>  
   </tr>
   <% @order.line_items.each do |line_item| -%>
