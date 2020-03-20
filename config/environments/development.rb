@@ -70,7 +70,7 @@ Rails.application.configure do
     domain: "hostinger.com",
     authentication: "plain",
     user_name: "ngthduy@ngthduy.com",
-    password: "thanhduy98",
+    password: "*******",
     enable_starttls_auto: true,
   }
 end
