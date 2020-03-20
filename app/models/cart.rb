@@ -13,7 +13,11 @@ class Cart < ApplicationRecord
   end
 
   def total_price
-    #binding.pry
     line_items.to_a.sum { |item| item.total_price }
+  end
+
+  def total_item
+    # binding.pry
+    line_items.to_a.sum { |item| item.total_item }
   end
 end

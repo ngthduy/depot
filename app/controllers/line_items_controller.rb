@@ -74,7 +74,7 @@ class LineItemsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to store_index_url }
       # binding.pry
-      format.js
+      format.js { render :action => 'destroy.js.erb'}
       format.json { head :no_content }
     end
   end
