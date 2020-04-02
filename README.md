@@ -23,3 +23,6 @@ Things you may want to cover:
 
 * ...
 # depot
+
+
+``` git clone
