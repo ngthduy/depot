@@ -8,7 +8,7 @@
 ### Clone repository
 
 ```php
-    $ git clone [https://github.com/ngthduy/saleapp.git](https://github.com/ngthduy/saleapp.git)
+    $ git clone [https://github.com/ngthduy/saleapp.git](http://https://github.com/ngthduy/saleapp.git)
     $ cd saleapp
 ```
 ### Check version
