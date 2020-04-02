@@ -2,13 +2,19 @@
 
 * Ruby version: 2.7.0
 
+* Rails version: 5.1.4
 
-# Install
+* Database management system: postgres
+
+* Database name: depot
+
+
+# Install and Deloyment
 
 ### Clone repository
 
 ```php
-    $ git clone [https://github.com/ngthduy/saleapp.git](http://https://github.com/ngthduy/saleapp.git)
+    $ git clone https://github.com/ngthduy/saleapp.git
     $ cd saleapp
 ```
 ### Check version
@@ -42,8 +48,7 @@ db:seed -> create seed data
 ```php
     $ rails s
 ```
-
-
+Run on browser
 ```php
-
+    http://localhost:3000/
 ```
