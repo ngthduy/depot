@@ -1,30 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Ruby version: 2.7.0
 
-* Ruby version: 2.7.0    
 
-* System dependencies 133
+# Install
 
-* Configuration
+### Clone repository
 
-* Database name: depot
+```php
+    $ git clone https://github.com/ngthduy/saleapp.git
+    $ cd saleapp
+```
+### Check version
+```php
+    $ ruby -v
+```
 
-* Database initialization: postgresql
+### Install dependencies
+```php
+    bundle & yarn
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
-# depot
+### Set environment variables
+```php
+    $ rails db:create db:migrate db:seed
+``` 
+### Run server
+```php
+    $ rails s
+```
 
 
 ```php
-    git clone 
+
 ```
